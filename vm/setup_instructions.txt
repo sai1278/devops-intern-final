@@ -1,0 +1,9 @@
+# VM Setup Instructions
+
+1. Install VirtualBox and create a small Ubuntu VM (1 CPU, 1GB RAM).
+2. Inside the VM:
+   - Install Docker (`sudo apt update && sudo apt install -y docker.io`).
+   - Clone your repo: `git clone https://github.com/sai1278/devops-intern-final.git`
+   - Build Docker image: `docker build -t hello-devops .`
+   - Run it: `docker run --rm hello-devops`
+3. (Optional) Install Nomad inside the VM and run `nomad job run nomad/hello.nomad`.
